@@ -1,4 +1,7 @@
 ;; -*- no-byte-compile: t; -*-
 ;;; email/mu4e/packages.el
 
-(package! org-msg :pin "557d490ecbd80522a42f7b1fb6aaacca504d4512")
+(when (featurep! +org)
+  (package! org-msg :pin "2db6725c4a4f4342a9c61895b7c3c82795b01fee"))
+
+(package! mu4e-alert :pin "91f0657c5b245a9de57aa38391221fb5d141d9bd")
